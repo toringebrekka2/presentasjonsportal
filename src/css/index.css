@@ -42,7 +42,7 @@ body {
     
 }
 
-navbar-brand {
+.navbar-brand {
     padding-left: 20px;
 }
 
@@ -66,23 +66,10 @@ navbar-brand {
     outline: none !important;
 }
 
-#top {
+#about {
     background: linear-gradient(rgba(92, 92, 92, 0.5), rgba(92, 92, 92, 0.5)), url(../images/white_mountains.jpeg); background-size: cover;
     padding-top: 5%;
-    min-height: 500px;
-}
-
-#top-container {
-    height: 500px;
-}
-
-#top-left-col {
-    padding-left: 130px;
-}
-
-#top-text {
-    width: 650;
-    height: 300;
+    min-height: 400px;
 }
 
 .top-title {
@@ -96,15 +83,6 @@ navbar-brand {
     font-weight: 300;
     margin-top: 10px;
     color: rgb(255, 255, 255);
-}
-
-#top-right-col {
-    padding-left: 100px;
-    padding-top: 10px;
-}
-
-.carousel {
-    
 }
 
 /*
@@ -146,7 +124,7 @@ navbar-brand {
     text-align: center;
 }
 
-#mid {
+#medlemmer {
     padding: 80px 0;
     min-height: 500px;
     background-color: white;
@@ -162,8 +140,7 @@ navbar-brand {
 
 .member-box {
     align-content: center;
-    border: solid 3px; 
-    border-color:rgba(0, 0, 0, 0.404);
+    border: 3px solid rgba(0, 0, 0, 0.404);
     border-radius: 5px;
     height: 400px;
     transition: transform .2s;
@@ -227,12 +204,12 @@ navbar-brand {
     border-top-right-radius: 2px;
 }
 
-#bottom {
+#fokus {
     padding: 80px 0;
     min-height: 500px;
 }
 
-#footer {
+#kontakt {
     padding: 40px 0;
     background-color: rgb(0, 0, 0);
 }
@@ -240,4 +217,11 @@ navbar-brand {
 #footer-title {
     color: white;
     font-size: 30px;
+}
+
+#introCarousel {
+    margin: auto;
+    background: #0005;
+    border-radius: 20px;
+    min-height: 150px;
 }
