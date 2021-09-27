@@ -76,10 +76,6 @@ navbar-brand {
     height: 500px;
 }
 
-.row {
-    height: 500px;
-}
-
 #top-left-col {
     padding-left: 190px;
 }
@@ -247,16 +243,12 @@ navbar-brand {
     min-height: 500px;
 }
 
-.row footer {
-    min-height: 60px;
-}
-
 #footer {
-    padding: 80px 0;
-    min-height: 60px;
+    padding: 40px 0;
     background-color: rgb(0, 0, 0);
 }
 
-#footer-text {
+#footer-title {
     color: white;
+    font-size: 30px;
 }
