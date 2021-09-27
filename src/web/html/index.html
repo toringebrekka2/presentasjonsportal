@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gruppe 14 - Portal</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" 
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Til toppen</button>
+        <script>
+            var mybutton = document.getElementById("myBtn");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <section id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">LOGO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#top">Om gruppa</a>
+                            </li>
+                            <li class="nav-link">
+                                <a class="nav-link" href="#mid">Medlemmer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#bottom">Mål & Fokus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">Kontakt oss</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section id="top">
+            <div class="container-fluid" id="top-container">
+                <div class="row">
+                    <div class="col-md-6" id="top-left-col">
+                        <div id="top-text">
+                            <p class="top-title">Gruppe 14</p>
+                            <p class="running-text">5 studenter ved Universitet i Agder.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="top-right-col">
+                        <div id="slider">
+                            <div class="slide" id="slide-1">
+                                <p class="slide-title">Hvem er vi?</p>
+                                <p class="slide-text">Vi studerer siste året på linja IT og Informasjonssystemer ved Universitetet i Agder.</p>
+                            </div>
+                            <div class="slide" id="slide-2">
+                                <p class="slide-title">Interesser</p>
+                                <p class="slide-text">Interesser</p>
+                            </div>
+                            <div class="slide" id="slide-3">
+                                <p class="slide-title">Ønsker</p>
+                                <p class="slide-text">Ønsker</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section id="mid">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 members">
+                        <div id="info">
+                            <h1 id="info-title">Medlemmer:</h1>
+                            <h1 id="info-text">Klikk på et medlem for å se medlemets LinkedIn profil</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-2 members">
+                        <a href="https://www.linkedin.com/in/tor-inge-brekka-023a60197/" target="_blank">
+                        <div class="member-box" id="member-1">
+                            <img class="img-fluid" src="../../images/example_img.jpeg">
+                            <h1 class="member-title">Tor Inge Brekka</h1>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-2 members">
+                        <a href="https://www.linkedin.com/in/anders-korsnes-536aa314b/" target="_blank">
+                        <div class="member-box" id="member-2">
+                            <img class="img-fluid" src="../../images/example_img.jpeg">
+                            <h1 class="member-title">Anders Korsnes</h1>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-2 members">
+                        <a href="https://www.linkedin.com/in/thomas-l%C3%A5g-04125614b/" target="_blank">
+                        <div class="member-box" id="member-3">
+                            <img class="img-fluid" src="../../images/example_img.jpeg">
+                            <h1 class="member-title">Thomas Låg Hjelleseth</h1>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-2 members">
+                        <a href="">
+                        <div class="member-box" id="member-4">
+                            <img class="img-fluid" src="../../images/example_img.jpeg">
+                            <h1 class="member-title">Bendix Melkeraaen Vagle</h1>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-2 members">
+                        <a href="https://www.linkedin.com/in/eirik-svagard/" target="_blank">
+                        <div class="member-box" id="member-5">
+                            <img class="img-fluid" src="../../images/example_img.jpeg">
+                            <h1 class="member-title">Eirik Thilesen Svagård</h1>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Mål og Fokus</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
