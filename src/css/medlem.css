@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar {
+    padding: 0 !important;
+    background: rgba(255, 255, 255, 0.9);
+    min-height: 60px;
+    
+}
+
+.navbar-brand {
+    padding-left: 20px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color: rgb(0, 0, 0) !important;
+    font-weight: 450;
+    float: right;
+    text-align: left;
+}
+
+.fa-bars {
+    color: rgb(0, 0, 0);
+    font-size: 30px !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+.content {
+    background: linear-gradient(rgba(92, 92, 92), rgba(92, 92, 92));
+    padding-top: 5%;
+    min-height: 400px;
+}
+
+.title {
+
+}
+
+#image {
+
+}
+
+.text {
+
+}
+
+.linkedin {
+
+}
