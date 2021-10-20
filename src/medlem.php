@@ -66,7 +66,17 @@ $medlemmer[] = array(
     "fullt_navn"=>"Eirik Thilesen Svagård",
     "bilde"=>"//useg.it/avatars/18ff2381c713b89a7237786972b86ce7",
     "linkedIn"=>"https://www.linkedin.com/in/eirik-svagard/",
-    "beskrivelse"=>""
+    "beskrivelse"=>"
+    Mitt navn er Eirik Thilesen Svagård, og jeg går tredje året på min bachelorgrad i IT og Informasjonssystemer. Jeg er 25 år gammel og bor for tiden med samboeren i Kristiansand sentrum. Jeg er opprinnelig fra Mandal, men flyttet til Oslo for å fullføre utdannelsen min som elektriker. Der fikk jeg 3.5 år med arbeidserfaring.<br>
+    Mens jeg utdannet meg til elektriker hadde jeg flere hobbyer innen IT og utvikling jeg holdt på med. Det er grunnen til at jeg sluttet som elektriker og startet studiene.<br>
+   <br>
+    Jeg er kjent med flere programmeringsspråk, blant andre PHP, JavaScript/HTML/CSS, Java, og er også godt kjent med database-behandling og linux-baserte server-systemer.<br>
+    Jeg har arbeidet lenge med utvikling, og har blant annet vært med på å utvikle en app som skal hjelpe brukerne å lese.<br>
+ <br>
+    Emnene hvor vi fikk reelle prosjekter vi kunne jobbe med likte jeg svært godt, spesielt da vi arbeidet mot et sluttprodukt over hele semesteret.<br>
+ <br>
+    Jeg ønsker å bruke min erfaring til å utvikle løsninger som løser problemer og gjøre hverdagen bedre for folk generelt.
+"
 );
 $medlemmer[] = array(
     "slug"=>"espen",
