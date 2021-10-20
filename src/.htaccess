@@ -1,0 +1,4 @@
+
+
+#RewriteEngine on
+#RewriteRule ^([a-zA-Z])$ medlem.php?m=$1 [L]

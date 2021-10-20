@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+$included = true;
+include 'medlem.php';
+
+$memberPrefix = "medlem.php?m=";
+$medlemmer = $medlemmer ?? array();
+
+?><!DOCTYPE html>
 <html lang="en">
     <head>
         <title>ASCII - Portal</title>
@@ -13,6 +20,7 @@
         integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
         <script src="//cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <button onclick="topFunction()" id="myBtn" title="Go to top">Til toppen</button>
@@ -33,12 +41,17 @@
               document.body.scrollTop = 0;
               document.documentElement.scrollTop = 0;
             }
+
+            $().ready(()=>{
+                console.log("Ready");
+                $("#introCarousel").height( $("#introCarousel").height() );
+            });
         </script>
 
         <section id="nav-bar">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">ASCII</a>
+                    <a class="navbar-brand" href="index.php">ASCII</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -69,7 +82,7 @@
                     <div class="col-md-6">
                         <div id="top-text">
                             <p class="top-title">ASCII</p>
-                            <p class="running-text">7 studenter ved Universitet i Agder.</p>
+                            <p class="running-text"><?=count($medlemmer);?> studenter ved Universitet i Agder.</p>
                         </div>
                     </div>
 
@@ -81,7 +94,7 @@
                                     <div id="slide-1">
                                         <p class="slide-title">Hvem er vi?</p>
                                         <p class="slide-text">
-                                            Vi er en gruppe på syv studenter som alle går siste året på bacheloren 
+                                            Vi er en gruppe på syv studenter som alle går siste året på bacheloren
                                             IT og Informasjonssystemer ved Universitetet i Agder. Gjennom studiet har vi
                                             tilegnet oss mye erfaring med å jobbe sammen som gruppe og er vant til å 
                                             måtte samarbeide for å nå målene vi har satt oss. Våre kunnskaper innen 
@@ -94,7 +107,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div id="slide-2" src="...">
+                                    <div id="slide-2">
                                         <p class="slide-title">Interesser</p>
                                         <p class="slide-text">
                                             Vår gruppe brenner for å kunne bruke våre kunnskaper og erfaringer på reelle 
@@ -105,7 +118,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div id="slide-3" src="...">
+                                    <div id="slide-3">
                                         <p class="slide-title">Ønsker</p>
                                         <p class="slide-text">
                                             Våre ønsker er å danne et godt samarbeid med en bedriftspartner og sammen jobbe
@@ -133,69 +146,31 @@
 
         <section id="medlemmer">
             <div class="container-fluid" id="medlem-container">
-                <div class="row" id="member-top">
+                <div id="member-top">
                     <h1 id="info-title">Medlemmer</h1>
                     <h1 id="info-text"><span>Klikk på et medlem for å bli bedre kjent</span></h1>
                 </div>
-                <div class="row rad">
-                    <div class="col-md-2 members">
-                        <a href="johannes.html">
-                            <div class="member-box" id="member-1">
-                                <img class="img-fluid" src="//media.discordapp.net/attachments/885832319825485845/892078569667297311/johannes.jpg">
-                                <h1 class="member-title">Johannes</h1>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-2 members">
-                        <a href="toringe.html">
-                        <div class="member-box" id="member-2">
-                            <img class="img-fluid" src="./images/tor_inge_crop.png">
-                            <h1 class="member-title">Tor Inge</h1>
+
+                <div class="row m-3">
+
+                    <?php
+                    foreach($medlemmer as $k => $m){
+                    ?>
+                    <div class="col members" style="">
+                            <!--<div class="member-box" id="member-<?=$k;?>">
+                                <img class="img-fluid" src="<?=$m['bilde'];?>" alt="<?=$m['navn'];?>">
+                                <h1 class="member-title"><?=$m['navn'];?></h1>
+                            </div>-->
+
+                        <div class="card" style="width: 12rem; margin: auto;">
+                            <a href="<?=$memberPrefix.htmlspecialchars($m['slug']);?>" class="card-link stretched-link">
+                                <img class="card-img-top" src="<?=$m['bilde'];?>" alt="<?=$m['navn'];?>">
+                            </a>
+                                <h5 class="card-title member-title"><?=$m['navn'];?></h5>
                         </div>
-                        </a>
                     </div>
-                    <div class="col-md-2 members">
-                        <a href="anders.html">
-                        <div class="member-box" id="member-3">
-                            <img class="img-fluid" src="images/anders.jpg">
-                            <h1 class="member-title">Anders</h1>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row rad">
-                    <div class="col-md-2 members">
-                        <a href="thomas.html">
-                        <div class="member-box" id="member-4">
-                            <img class="img-fluid" src="images/thomas_crop.png">
-                            <h1 class="member-title">Thomas</h1>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="col-md-2 members">
-                        <a href="bendix.html">
-                        <div class="member-box" id="member-5">
-                            <img class="img-fluid" src="//media.discordapp.net/attachments/885832319825485845/891766144531333141/bendix.jpg">
-                            <h1 class="member-title">Bendix</h1>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="col-md-2 members">
-                        <a href="eirik.html">
-                        <div class="member-box" id="member-6">
-                            <img class="img-fluid" src="//useg.it/avatars/18ff2381c713b89a7237786972b86ce7">
-                            <h1 class="member-title">Eirik</h1>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="col-md-2 members">
-                        <a href="espen.html">
-                        <div class="member-box" id="member-7">
-                            <img class="img-fluid" src="images/espen_crop.PNG">
-                            <h1 class="member-title">Espen</h1>
-                        </div>
-                        </a>
-                    </div>
+
+                    <?php } ?>
                 </div>
             </div>
         </section>
