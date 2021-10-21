@@ -57,7 +57,13 @@ $medlemmer[] = array(
     "fullt_navn"=>"Bendix Melkeraaen Vagle",
     "bilde"=>"//media.discordapp.net/attachments/885832319825485845/891766144531333141/bendix.jpg",
     "linkedIn"=>"https://www.linkedin.com/in/bendix-vagle-105464a9/",
-    "beskrivelse"=>""
+    "beskrivelse"=>"Mitt navn er Bendix Vagle og jeg går tredje året på IT-bacheloren på UiA. 
+    Jeg er 24 år gammel og bor i et studentkollektiv i Kristiansand, ikke lange veien fra universitetet. Opprinnelig er jeg fra Mandal,
+     men har bodd i Kristiansand siden jeg startet studiet på høsten 2019 og liker meg godt her. Før jeg begynte på UiA har jeg hatt et
+      år med psykologi ved Universitetet i Oslo. Etter det hadde jeg et jobbeår hvor jeg jobbet på to forskjellige butikker, 
+      Jula og Nor Engros, som begge er innen detaljhandelen. På siden av studiet jobber jeg fortsatt deltid på Jula og er frivillig ved studentbaren Østsia på universitetet.
+    Jeg synes design, prototyping og web-programmering er de mest spennende emnene vi har hatt om gjennom mitt studieløp i IT og ønsker å jobbe med noe relatert til det. 
+    Ellers er jeg fleksibel og elsker å prøve og finne ut av nye ting. "
 );
 
 $medlemmer[] = array(
