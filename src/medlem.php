@@ -39,7 +39,15 @@ $medlemmer[] = array(
     "fullt_navn"=>"Anders Korsnes",
     "bilde"=>"images/anders.jpg",
     "linkedIn"=>"https://www.linkedin.com/in/anders-korsnes-536aa314b/",
-    "beskrivelse"=>""
+    "beskrivelse"=>"Mitt navn er Anders Korsnes. Jeg er 30 år og er Bachelorstudent ved Universitetet i Agder hvor jeg studerer IT og Informasjonssystemer.
+ Jeg er født og oppvokst i Moss, men har i voksen alder også bodd i Halden, Oslo, Kristiansand og nå Gjøvik. Fra før har jeg fagbrev i 3D og Animasjon, et 
+ årsstudium i Idrett og samfunn, og ett år på lærerstudiet. Av arbeidserfaring har jeg flere år som assistent og vikarlærer på barneskoler og ungdomsskole, 
+ keepertrener og trener for barn og unge, butikkmedarbeider, forsikringsrådgiver for IF forsikring, og et par mindre freelance-jobber som er relevant til fagbrevet mitt.<br>
+På fritiden driver jeg med trening og løping. Frem til jeg gav meg for noen år siden så spilte jeg fotball, og har brukt rundt 20 år av livet mitt til dette. 
+Jeg liker også å tilegne meg ny kunnskap, og lære meg nye ferdigheter. Jeg har en egen podkast, hvor jeg snakker med mange ulike mennesker om interessante ting og 
+tematikk. Generelt sett har jeg mange ulike hobbyer og interesser jeg liker å bruke tiden min på.<br>
+Innenfor IT og Informasjonssystemer har jeg fått øynene opp for spesielt prototyping, design av nettsider og apper, PHP-programmering og datasikkerhet. Jeg håper 
+å kunne utforske disse temaene videre, og se hvor jeg kan ta det mot et potensielt arbeidsliv."
 );
 
 $medlemmer[] = array(
@@ -48,7 +56,10 @@ $medlemmer[] = array(
     "fullt_navn"=>"Thomas Låg Hjelleseth",
     "bilde"=>"images/thomas_crop.png",
     "linkedIn"=>"https://www.linkedin.com/in/thomas-l%C3%A5g-04125614b/",
-    "beskrivelse"=>""
+    "beskrivelse"=>"Jeg heter Thomas Låg Hjelleseth og er 23 år gammel. Jeg er oppvokst i Flekkefjord, der gikk jeg media og kommunikasjon 
+    på videregående. Jeg tok et årsstudie i multimedieteknologi og -design ved UiA Grimstad før jeg flytta til Kristiansand, hvor jeg nå 
+    studerer IT og informasjonssystemer. Jeg forbereder meg til bachelor prosjektet jeg skal ha nå til våren.<br>
+Med tanke på koding har jeg arbeidet med JavaScript, HTML, Java, SQL og PHP. Jeg er interessert i effektiv problemløsning."
 );
 
 $medlemmer[] = array(
