@@ -101,11 +101,13 @@ $medlemmer[] = array(
     "fullt_navn"=>"Espen Land Stokkeland",
     "bilde"=>"images/espen_crop.PNG",
     "linkedIn"=>"https://www.linkedin.com/in/espen-land-stokkeland-736106116/",
-    "beskrivelse"=>"Jeg heter Espen, er 26 år gammel, kommer fra Vennesla og bor i Kristiansand. Etter studiespesialisering gikk jeg på bibelskole, 
-                            elektro og deretter bestemte jeg meg for å gå all in for IT.  Nå er jeg på siste året på Bacheloren ved UiA. 
-                            Nå i semester fem har jeg praksis hos KnowIT, hvor jeg jobber med frontend (React med typescript), men jeg trives godt med backend og database.
-                            På fritiden er jeg glad i å bruke tid ute, game litt, og besøke familien hjemme i Vennesla. Da får jeg også møtt hunden min, som ikke er tillatt
-                            i leiligheten her jeg nå bor."
+    "beskrivelse"=>"Jeg heter Espen, er 26 år gammel, kommer fra Vennesla og bor i Kristiansand. Etter studiespesialisering gikk jeg på bibelskole,
+og deretter tok jeg noen emner i fysikk ved UiA og elektro, før jeg bestemte meg for å gå all in for IT. 
+<br>
+Nå går jeg på siste året på Bacheloren ved UiA. 
+Dette semesteret har jeg praksis hos KnowIT, hvor jeg jobber med frontend (React med typescript), men jeg trives særdeles godt med backend og database.
+<br>
+På fritiden er jeg glad i å bruke tid ute, game litt, og besøke familien hjemme i Vennesla. Da får jeg også møtt hunden min, Walter."
 );
 
 
