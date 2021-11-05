@@ -82,7 +82,7 @@ $medlemmer = $medlemmer ?? array();
                     <div class="col-md-6">
                         <div id="top-text">
                             <p class="top-title">ASCII</p>
-                            <p class="running-text"><?=count($medlemmer);?> studenter ved Universitet i Agder.</p>
+                            <p class="running-text">3 studenter ved Universitet i Agder.</p>
                         </div>
                     </div>
 
@@ -94,7 +94,7 @@ $medlemmer = $medlemmer ?? array();
                                     <div id="slide-1">
                                         <p class="slide-title">Hvem er vi?</p>
                                         <p class="slide-text">
-                                            Vi er en gruppe på syv studenter som alle går siste året på bacheloren
+                                            Vi er en gruppe på tre studenter som alle går siste året på bacheloren
                                             IT og Informasjonssystemer ved Universitetet i Agder. Gjennom studiet har vi
                                             tilegnet oss mye erfaring med å jobbe sammen som gruppe og er vant til å 
                                             måtte samarbeide for å nå målene vi har satt oss. Våre kunnskaper innen 
@@ -153,25 +153,49 @@ $medlemmer = $medlemmer ?? array();
 
                 <div class="row m-3">
 
-                    <?php
-                    foreach($medlemmer as $k => $m){
-                    ?>
-                    <div class="col members" style="">
-                            <!--<div class="member-box" id="member-<?=$k;?>">
-                                <img class="img-fluid" src="<?=$m['bilde'];?>" alt="<?=$m['navn'];?>">
-                                <h1 class="member-title"><?=$m['navn'];?></h1>
+                                        <div class="col members" style="">
+                            <!--<div class="member-box" id="member-0">
+                                <img class="img-fluid" src="images/tor_inge_crop.png" alt="Tor Inge">
+                                <h1 class="member-title">Tor Inge</h1>
                             </div>-->
 
                         <div class="card" style="width: 12rem; margin: auto;">
-                            <a href="<?=$memberPrefix.htmlspecialchars($m['slug']);?>" class="card-link stretched-link">
-                                <img class="card-img-top" src="<?=$m['bilde'];?>" alt="<?=$m['navn'];?>">
+                            <a href="./toringe" class="card-link stretched-link">
+                                <img class="card-img-top" src="images/tor_inge_crop.png" alt="Tor Inge">
                             </a>
-                                <h5 class="card-title member-title"><?=$m['navn'];?></h5>
+                                <h5 class="card-title member-title">Tor Inge</h5>
                         </div>
                     </div>
 
-                    <?php } ?>
-                </div>
+                                        <div class="col members" style="">
+                            <!--<div class="member-box" id="member-1">
+                                <img class="img-fluid" src="images/anders.jpg" alt="Anders">
+                                <h1 class="member-title">Anders</h1>
+                            </div>-->
+
+                        <div class="card" style="width: 12rem; margin: auto;">
+                            <a href="./anders" class="card-link stretched-link">
+                                <img class="card-img-top" src="images/anders.jpg" alt="Anders">
+                            </a>
+                                <h5 class="card-title member-title">Anders</h5>
+                        </div>
+                    </div>
+
+                                        <div class="col members" style="">
+                            <!--<div class="member-box" id="member-2">
+                                <img class="img-fluid" src="images/espen_crop.PNG" alt="Espen">
+                                <h1 class="member-title">Espen</h1>
+                            </div>-->
+
+                        <div class="card" style="width: 12rem; margin: auto;">
+                            <a href="./espen" class="card-link stretched-link">
+                                <img class="card-img-top" src="images/espen_crop.PNG" alt="Espen">
+                            </a>
+                                <h5 class="card-title member-title">Espen</h5>
+                        </div>
+                    </div>
+
+                                    </div>
             </div>
         </section>
 
@@ -197,7 +221,7 @@ $medlemmer = $medlemmer ?? array();
                         <h1 id="footer-title">Kontakt oss</h1>
                     </div>
                     <div class="col-md-6 footer-text">
-                        <h1 id="footer-text">Johannes Birkeland: johannesbi@uia.no</h1>
+                        <h1 id="footer-text">Anders Korsnes: andersko@uia.no</h1>
                     </div>
                 </div>
             </div>
