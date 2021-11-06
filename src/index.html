@@ -1,11 +1,4 @@
-<?php
-$included = true;
-include 'medlem.php';
-
-$memberPrefix = "medlem.php?m=";
-$medlemmer = $medlemmer ?? array();
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>ASCII - Portal</title>
@@ -61,7 +54,7 @@ $medlemmer = $medlemmer ?? array();
                                 <a class="nav-link active" aria-current="page" href="#about">Om gruppa</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#medlemmer">Medlemmer</a>
+                                <a class="nav-link" href="#members">Medlemmer</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#fokus">Mål og Fokus</a>
@@ -75,7 +68,6 @@ $medlemmer = $medlemmer ?? array();
             </nav>
         </section>
 
-
         <section id="about">
             <div class="container">
                 <div class="row">
@@ -85,9 +77,7 @@ $medlemmer = $medlemmer ?? array();
                             <p class="running-text">3 studenter ved Universitet i Agder.</p>
                         </div>
                     </div>
-
                     <div class="col-md-6">
-
                         <div id="introCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -144,63 +134,70 @@ $medlemmer = $medlemmer ?? array();
             </div>
         </section>
 
-        <section id="medlemmer">
-            <div class="container-fluid" id="medlem-container">
-                <div class="row">
+        <section id="members">
+            <div class="container-fluid">
+                <div class="row" id="member-top-row">
                     <div id="member-top">
-                        <h1 id="info-title">Medlemmer</h1>
+                        <h1 id="member-top-title">Medlemmer</h1>
                     </div>
                 </div>
-                <div class="row m-3">
-                    <div class="col">
-                        <img class="img" id="image" src="<?=$medlem['bilde'];?>" alt="<?=$medlem['navn'];?>">
+                <div class="row" class="member-row">
+                    <div class="col-md-6">
+                        <img id="img-fluid" src="images/anders.jpg">
                     </div>
-                    <div class="col">
-                        <h1 class="title">
-                            <?=$medlem['fullt_navn'];?>
-                        </h1>
-                        <p class="text">
-                            <?=$medlem['beskrivelse'];?>
-                        </p><br>
-                        <a class="linkedin" href="<?=$medlem['linkedIn'];?>" target="_blank">LinkedIn</a>
+                    <div class="col-md-6">
+                        <h1 class="member-title">Anders Korsnes</h1>
+                        <p class="member-text">
+                            Mitt navn er Anders Korsnes. Jeg er 30 år og er Bachelorstudent ved Universitetet i Agder hvor jeg studerer IT og Informasjonssystemer.
+                            Jeg er født og oppvokst i Moss, men har i voksen alder også bodd i Halden, Oslo, Kristiansand og nå Gjøvik. Fra før har jeg fagbrev i 3D og Animasjon, et 
+                            årsstudium i Idrett og samfunn, og ett år på lærerstudiet. Av arbeidserfaring har jeg flere år som assistent og vikarlærer på barneskoler og ungdomsskole, 
+                            keepertrener og trener for barn og unge, butikkmedarbeider, forsikringsrådgiver for IF forsikring, og et par mindre freelance-jobber som er relevant til fagbrevet mitt.<br>
+                            På fritiden driver jeg med trening og løping. Frem til jeg gav meg for noen år siden så spilte jeg fotball, og har brukt rundt 20 år av livet mitt til dette. 
+                            Jeg liker også å tilegne meg ny kunnskap, og lære meg nye ferdigheter. Jeg har en egen podkast, hvor jeg snakker med mange ulike mennesker om interessante ting og 
+                            tematikk. Generelt sett har jeg mange ulike hobbyer og interesser jeg liker å bruke tiden min på.<br>
+                            Innenfor IT og Informasjonssystemer har jeg fått øynene opp for spesielt prototyping, design av nettsider og apper, PHP-programmering og datasikkerhet. Jeg håper 
+                            å kunne utforske disse temaene videre, og se hvor jeg kan ta det mot et potensielt arbeidsliv.
+                        </p>
+                        <a href="https://www.linkedin.com/in/anders-korsnes-536aa314b/" class="linkedin" target="_blank">LinkedIn</a>
                     </div>
-
-                    <!--<div class="col members" style="">
-                        <div class="member-box" id="member-0">
-                            <img class="img-fluid" src="images/tor_inge_crop.png" alt="Tor Inge">
-                            <h1 class="member-title">Tor Inge</h1>
-                        </div>
-                        <div class="card" style="width: 12rem; margin: auto;">
-                            <a href="./toringe" class="card-link stretched-link">
-                                <img class="card-img-top" src="images/tor_inge_crop.png" alt="Tor Inge">
-                            </a>
-                            <h5 class="card-title member-title">Tor Inge</h5>
-                        </div>
+                </div>
+                <div class="row" class="member-row">
+                    <div class="col-md-6">
+                        <img id="img-fluid" src="images/espen_crop.PNG">
                     </div>
-                    <div class="col members" style="">
-                        <div class="member-box" id="member-1">
-                            <img class="img-fluid" src="images/anders.jpg" alt="Anders">
-                            <h1 class="member-title">Anders</h1>
-                        </div>
-                        <div class="card" style="width: 12rem; margin: auto;">
-                            <a href="./anders" class="card-link stretched-link">
-                                <img class="card-img-top" src="images/anders.jpg" alt="Anders">
-                            </a>
-                            <h5 class="card-title member-title">Anders</h5>
-                        </div>
+                    <div class="col-md-6">
+                        <h1 class="member-title">Espen Land Stokkeland</h1>
+                        <p class="member-text">
+                            Jeg heter Espen, er 26 år gammel, kommer fra Vennesla og bor i Kristiansand. Etter studiespesialisering gikk jeg på bibelskole,
+                            og deretter tok jeg noen emner i fysikk ved UiA og elektro, før jeg bestemte meg for å gå all in for IT. 
+                            <br>
+                            Nå går jeg på siste året på Bacheloren ved UiA. 
+                            Dette semesteret har jeg praksis hos KnowIT, hvor jeg jobber med frontend (React med typescript), 
+                            men jeg trives særdeles godt med backend og database.
+                            <br>
+                            På fritiden er jeg glad i å bruke tid ute, game litt, og besøke familien hjemme i Vennesla. 
+                            Da får jeg også møtt hunden min, Walter."
+                        </p>
+                        <a href="https://www.linkedin.com/in/espen-land-stokkeland-736106116/" class="linkedin" target="_blank">LinkedIn</a>
                     </div>
-                    <div class="col members" style="">
-                        <div class="member-box" id="member-2">
-                            <img class="img-fluid" src="images/espen_crop.PNG" alt="Espen">
-                            <h1 class="member-title">Espen</h1>
-                        </div>
-                        <div class="card" style="width: 12rem; margin: auto;">
-                            <a href="./espen" class="card-link stretched-link">
-                                <img class="card-img-top" src="images/espen_crop.PNG" alt="Espen">
-                            </a>
-                            <h5 class="card-title member-title">Espen</h5>
-                        </div>
-                    </div>-->
+                </div>
+                <div class="row" class="member-row">
+                    <div class="col-md-6">
+                        <img id="img-fluid" src="images/tor_inge_crop.png">
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="member-title">Tor Inge Brekka</h1>
+                        <p class="member-text">
+                            Jeg heter Tor Inge, er 22 år gammel, kommer fra Gjerstad og bor på Vegårshei. På fritiden liker jeg å 
+                            spille diverse instrumenter, spille dataspill, lese og være med kjæreste og hund. Etter studiespesialisering jobbet jeg 
+                            et år før jeg begynte å innse min interesse for IT. Jeg går nå siste året på bacheloren 
+                            IT og Informasjonssystemer ved UiA og er glad jeg bestemte meg for å søke på IT linja. 
+                            Et stykke inn i femte semester sitter jeg igjen med varierte og gode kunnskaper innen 
+                            flere områder, men kanskje mest kunnskap og interesse har jeg for systemutvikling gjennom 
+                            tjenestedesign.
+                        </p>
+                        <a href="https://www.linkedin.com/in/tor-inge-brekka-023a60197/" class="linkedin" target="_blank">LinkedIn</a>
+                    </div>
                 </div>
             </div>
         </section>
