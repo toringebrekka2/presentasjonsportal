@@ -146,56 +146,62 @@ $medlemmer = $medlemmer ?? array();
 
         <section id="medlemmer">
             <div class="container-fluid" id="medlem-container">
-                <div id="member-top">
-                    <h1 id="info-title">Medlemmer</h1>
-                    <h1 id="info-text"><span>Klikk på et medlem for å bli bedre kjent</span></h1>
+                <div class="row">
+                    <div id="member-top">
+                        <h1 id="info-title">Medlemmer</h1>
+                    </div>
                 </div>
-
                 <div class="row m-3">
+                    <div class="col">
+                        <img class="img" id="image" src="<?=$medlem['bilde'];?>" alt="<?=$medlem['navn'];?>">
+                    </div>
+                    <div class="col">
+                        <h1 class="title">
+                            <?=$medlem['fullt_navn'];?>
+                        </h1>
+                        <p class="text">
+                            <?=$medlem['beskrivelse'];?>
+                        </p><br>
+                        <a class="linkedin" href="<?=$medlem['linkedIn'];?>" target="_blank">LinkedIn</a>
+                    </div>
 
-                                        <div class="col members" style="">
-                            <!--<div class="member-box" id="member-0">
-                                <img class="img-fluid" src="images/tor_inge_crop.png" alt="Tor Inge">
-                                <h1 class="member-title">Tor Inge</h1>
-                            </div>-->
-
+                    <!--<div class="col members" style="">
+                        <div class="member-box" id="member-0">
+                            <img class="img-fluid" src="images/tor_inge_crop.png" alt="Tor Inge">
+                            <h1 class="member-title">Tor Inge</h1>
+                        </div>
                         <div class="card" style="width: 12rem; margin: auto;">
                             <a href="./toringe" class="card-link stretched-link">
                                 <img class="card-img-top" src="images/tor_inge_crop.png" alt="Tor Inge">
                             </a>
-                                <h5 class="card-title member-title">Tor Inge</h5>
+                            <h5 class="card-title member-title">Tor Inge</h5>
                         </div>
                     </div>
-
-                                        <div class="col members" style="">
-                            <!--<div class="member-box" id="member-1">
-                                <img class="img-fluid" src="images/anders.jpg" alt="Anders">
-                                <h1 class="member-title">Anders</h1>
-                            </div>-->
-
+                    <div class="col members" style="">
+                        <div class="member-box" id="member-1">
+                            <img class="img-fluid" src="images/anders.jpg" alt="Anders">
+                            <h1 class="member-title">Anders</h1>
+                        </div>
                         <div class="card" style="width: 12rem; margin: auto;">
                             <a href="./anders" class="card-link stretched-link">
                                 <img class="card-img-top" src="images/anders.jpg" alt="Anders">
                             </a>
-                                <h5 class="card-title member-title">Anders</h5>
+                            <h5 class="card-title member-title">Anders</h5>
                         </div>
                     </div>
-
-                                        <div class="col members" style="">
-                            <!--<div class="member-box" id="member-2">
-                                <img class="img-fluid" src="images/espen_crop.PNG" alt="Espen">
-                                <h1 class="member-title">Espen</h1>
-                            </div>-->
-
+                    <div class="col members" style="">
+                        <div class="member-box" id="member-2">
+                            <img class="img-fluid" src="images/espen_crop.PNG" alt="Espen">
+                            <h1 class="member-title">Espen</h1>
+                        </div>
                         <div class="card" style="width: 12rem; margin: auto;">
                             <a href="./espen" class="card-link stretched-link">
                                 <img class="card-img-top" src="images/espen_crop.PNG" alt="Espen">
                             </a>
-                                <h5 class="card-title member-title">Espen</h5>
+                            <h5 class="card-title member-title">Espen</h5>
                         </div>
-                    </div>
-
-                                    </div>
+                    </div>-->
+                </div>
             </div>
         </section>
 

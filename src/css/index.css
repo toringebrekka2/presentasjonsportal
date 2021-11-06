@@ -67,7 +67,7 @@ body {
 }
 
 #about {
-    background: linear-gradient(rgba(92, 92, 92, 0.5), rgba(92, 92, 92, 0.5)), url(../images/white_mountains.jpeg); background-size: cover;
+    background-image: linear-gradient(rgba(92, 92, 92, 0.3), rgba(92, 92, 92, 0.3)), url(../images/white_mountains.jpeg); background-size: cover;
     padding-top: 5%;
     min-height: 500px;
 }
@@ -81,7 +81,6 @@ body {
 .running-text {
     font-size: 30px;
     font-weight: 300;
-    margin-top: 10px;
     color: rgb(255, 255, 255);
 }
 
