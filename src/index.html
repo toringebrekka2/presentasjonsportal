@@ -42,10 +42,10 @@
         </script>
 
         <section id="nav-bar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.php">ASCII</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="index.html">ASCII</a>
+                    <button class="navbar-toggler navbar-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -57,7 +57,7 @@
                                 <a class="nav-link" href="#members">Medlemmer</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#fokus">Mål og Fokus</a>
+                                <a class="nav-link" href="#mål">Mål og Fokus</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#kontakt">Kontakt oss</a>
@@ -136,14 +136,9 @@
 
         <section id="members">
             <div class="container-fluid">
-                <div class="row" id="member-top-row">
-                    <div id="member-top">
-                        <h1 id="member-top-title">Medlemmer</h1>
-                    </div>
-                </div>
-                <div class="row" class="member-row">
+                <div class="row" id="member-row">
                     <div class="col-md-6">
-                        <img id="img-fluid" src="images/anders.jpg">
+                        <img class="img-fluid" src="images/anders.jpg">
                     </div>
                     <div class="col-md-6">
                         <h1 class="member-title">Anders Korsnes</h1>
@@ -161,9 +156,9 @@
                         <a href="https://www.linkedin.com/in/anders-korsnes-536aa314b/" class="linkedin" target="_blank">LinkedIn</a>
                     </div>
                 </div>
-                <div class="row" class="member-row">
+                <div class="row" id="member-row">
                     <div class="col-md-6">
-                        <img id="img-fluid" src="images/espen_crop.PNG">
+                        <img class="img-fluid" src="images/espen_crop.PNG">
                     </div>
                     <div class="col-md-6">
                         <h1 class="member-title">Espen Land Stokkeland</h1>
@@ -181,9 +176,11 @@
                         <a href="https://www.linkedin.com/in/espen-land-stokkeland-736106116/" class="linkedin" target="_blank">LinkedIn</a>
                     </div>
                 </div>
-                <div class="row" class="member-row">
+                <div class="row" id="member-row">
                     <div class="col-md-6">
-                        <img id="img-fluid" src="images/tor_inge_crop.png">
+                        
+                            <img class="img-fluid" src="images/tor_inge_crop.png">
+                        
                     </div>
                     <div class="col-md-6">
                         <h1 class="member-title">Tor Inge Brekka</h1>
@@ -203,7 +200,7 @@
         </section>
 
         <section id="mål">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
                         <p id="mål-title">Mål og Fokus</p>
@@ -218,11 +215,13 @@
         </section>
 
         <section id="kontakt">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-2 footer-title">
+                    <div class="col-md-6 footer-title">
                         <h1 id="footer-title">Kontakt oss</h1>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-md-6 footer-text">
                         <h1 id="footer-text">Anders Korsnes: andersko@uia.no</h1>
                     </div>
